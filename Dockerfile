@@ -9,7 +9,7 @@ RUN chmod 644 /opt/jenkins.war
 
 ENV JENKINS_HOME /jenkins
 
-ADD jenkins-data/workspace/cli_test ${JENKINS_HOME}/
+
 
 ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
 EXPOSE 8080 8080
